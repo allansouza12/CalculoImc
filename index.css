@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');  /* aqui eu importei a fonte direto do google fonts */
+:root {
+    --primary-color: rgb(91, 189, 211);
+    --primary-color-darker: rgb(9, 48, 56);
+    /* criei duas variaveis para cores faço isso com o --variavel*/
+}
+
+* {
+    /* asterisco aplica para tudo */
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;}
+
+    .titulo{
+        margin: 10px; /* afastei da margem de cima */
+        display: flex; 
+        justify-content: center;
+    }
+    .container2{
+        width: 45%;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    .container2-wrapper{
+        display:flex;
+        justify-content: space-between;
+        
+    }
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* aqui eu apliquei para todos os form que tiver no html, coloquei eles em uma única coluna e um espaço entre os elementos */
+}
+label{
+    margin-top: 10px;
+}
+
+    button{
+        margin-top: 10px;
+        width: 60px;
+    
+    }
+    
+button:hover{
+    background-color: rgba(24, 216, 40, 0.664);
+}
+
+    h1{
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px; /* Espaçamento acima do campo de entrada */
+        box-sizing: border-box}
+
+.formulario {
+    margin: 20px auto; /* Espaçamento e centralização do formulário */
+    max-width: 400px; /* Largura máxima do formulário */
+    padding: 20px;
+    border: 2px solid #181717; /* Borda para destacar o formulário */
+    border-radius: 8px}
+
+    .bot{
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+    }
+    #result{
+        justify-content: center;
+        display: flex;    
+    }
+    .paragrafo, .bad {
+        padding: 10px;
+        background-color: rgb(147, 211, 147);
+    }
+    .bad{
+        background-color: rgb(226, 60, 60);
+    }
